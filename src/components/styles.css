@@ -1,0 +1,152 @@
+.Controls,
+.Controls div {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.Controls button {
+  height: 40px;
+  border-radius: 40px;
+  border: 0;
+  flex: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+  outline: 0;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.Controls button.start {
+  background: #d9534f;
+  color: #fff;
+}
+
+.Controls button.start:hover {
+  background: #b64441;
+}
+
+.Controls button.reset {
+  background: blue;
+  flex: 0;
+  margin-right: 25px;
+  color: #888;
+}
+
+.Controls button.reset:hover {
+  color: rgb(24, 168, 161);
+}
+
+.Controls button.pause {
+  background: #eea73c;
+  color: #fff;
+}
+
+.Controls button.pause:hover {
+  background: #0a0a0a;
+}
+
+.Controls button.resume {
+  background: #eea73c;
+  color: #fff;
+}
+
+.Controls button.resume:hover {
+  background: #0a0a0a;
+}
+.TimeDisplay {
+  position: relative;
+}
+
+.TimeDisplay svg {
+  max-width: 1000px;
+}
+
+.TimeDisplay circle {
+  transition: stroke-dashoffset 1s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.TimeDisplay > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -32px);
+  text-align: center;
+}
+
+.TimeDisplay h1 {
+  font-size: 52px;
+  font-weight: 300;
+  color: #1d0796;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.TimeDisplay p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(7, 7, 7);
+  letter-spacing: 3px;
+  margin: 10px 0 0;
+}
+.TypeSelect {
+  width: 400px;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .TypeSelect {
+    width: 100%;
+  }
+}
+
+.TypeSelect button {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  border-right: 0;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  color: #999;
+  outline: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.TypeSelect button:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.TypeSelect button:last-child {
+  border-right: 2px solid #ccc;
+  border-radius: 0 25px 25px 0;
+}
+
+.TypeSelect button.active {
+  background: #fff;
+  color: #d9534f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+  background-color: aqua;
+  color: white;
+}
+.footer p {
+  color: black;
+}
